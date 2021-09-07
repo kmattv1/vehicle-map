@@ -1,6 +1,8 @@
 from fastapi import FastAPI, Depends
 from functools import lru_cache
 
+from src.repositories.vehicle_info_interface import VehicleInfoInterface
+from src.repositories.vehicle_info import VehicleInfo
 from src.config.settings import Settings
 
 app = FastAPI()
@@ -13,4 +15,5 @@ def get_settings():
 
 @app.get('/')
 async def root(settings: Settings = Depends(get_settings)):
-    return settings.app_name
+    vehicleInfo: VehicleInfoInterface = VehicleInfo(settings)
+    return await vehicleInfo.get_availability_data()
