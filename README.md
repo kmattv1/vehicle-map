@@ -20,6 +20,7 @@ Aim of the backend for frontend service is to gather every required information 
   * Backend service could be a graphQL to provide flexibility on the client side iterations, on the other hand it would have its on cons because the backend itself would have less control on the load that it will push to the downstream services.
   * Using a REST API gives us clear visibility on the load we generate with eatch request.
   * Framework should be selected where self documentation is an out of the box feature based on annotations.
+    * Selected framework is [FastAPI](https://fastapi.tiangolo.com)
 * Frontend:
   * React with typescript will be used this will provide us type safety and a component based structure that can be considered as reusable component.
 
