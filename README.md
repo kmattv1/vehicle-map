@@ -33,6 +33,12 @@ Aim of the backend for frontend service is to gather every required information 
 * Placeholder for backend documentation link
 ```
 
+## Configuration:
+* .env file inside the backend folder contains the configuration of the backend application
+* variables set in the .env file
+  * DOWNSTREAM_URL
+  * API_KEY
+
 ## Local dev setup:
 ```
 * Placeholder for local dev setup
