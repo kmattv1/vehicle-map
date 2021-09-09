@@ -1,0 +1,1 @@
+{"last_updated":1631116053,"ttl":0,"version":"2.1","data":{"plans":[{"plan_id":"c98e70e6-5f48-4b14-be64-b6e933656497","name":"scooter-standard-pricing-berlin","currency":"EUR","price":1,"is_taxable":false,"description":"Standard pricing for scooters, 1.00 EUR to unlock, 0.19 EUR per minute to rent","per_min_pricing":[{"start":0,"rate":0.19,"interval":1}]}]}}
