@@ -20,11 +20,11 @@ class Plan:
     per_min_pricing: List[PerMinPricing]
 
 
-@dataclass
+@dataclass(order=True, frozen=True)
 class Plans:
     plans: List[Plan]
 
 
-@dataclass
+@dataclass(order=True, frozen=True)
 class PricingPlansResponse:
     data: Plans

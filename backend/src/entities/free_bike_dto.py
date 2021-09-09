@@ -15,7 +15,7 @@ class RentalUris:
 
 @dataclass(order=True, frozen=True)
 class Bike:
-    bike_id: int
+    bike_id: str
     lat: float
     lon: float
     is_reserved: bool
@@ -26,11 +26,11 @@ class Bike:
     rental_uris: RentalUris
 
 
-@dataclass
+@dataclass(order=True, frozen=True)
 class Bikes:
     bikes: List[Bike]
 
 
-@dataclass
+@dataclass(order=True, frozen=True)
 class FreeBikeResponse:
     data: Bikes
