@@ -8,3 +8,6 @@ backend_install_dependencies:
 	cd backend && pip3 install -r requirements.txt
 
 backend_install_run: backend_install_dependencies run_backend
+
+backend_test:
+	cd backend && python3 -m unittest discover -s 'tests' -p '*_test.py'
