@@ -52,7 +52,10 @@ Aim of the backend for frontend service is to gather every required information 
   * Containerize the python service and have a build and deploy step that would start it in ECS
   * Gateway that routes the frontend requests to the static store in S3
   * Gateway config to route api requests to the backend service that is running in ECS
-  
+
+* Frontend:
+  * Fix typing problems that are disabled now by ts-ignore
+
 * Testing:
   * Frontend has 0 tests and for the backend only the happy path is tested for the core logic of the service
   
